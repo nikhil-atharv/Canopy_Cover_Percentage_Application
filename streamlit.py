@@ -231,7 +231,7 @@ if roi is not None:
                     with col2:
                         def plot_ndvi(ndvi_img):
                             fig, ax = plt.subplots(figsize=(8, 5))
-                            im = ax.imshow(ndvi_img, cmap='RdYlGn', vmin=ndvi_image.values.flatten().min(), vmax=ndvi_image.values.flatten().max())
+                            im = ax.imshow(ndvi_img, cmap='RdYlGn', vmin=ndvi_img.values.flatten().min(), vmax=ndvi_img.values.flatten().max())
                             ax.set_title('NDVI Image')
                             ax.set_xlabel('')
                             ax.set_ylabel('')
@@ -247,6 +247,7 @@ if roi is not None:
 
 else:
     st.info('👆 Please upload a file to get started.')
+
 
 
 
