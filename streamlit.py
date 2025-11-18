@@ -88,8 +88,8 @@ if roi is not None:
 
             if startDate > endDate:
                 st.error('End date must be after start date.')
-            elif:
-                stratDate != endDate
+                
+            elif stratDate != endDate:
         
                 @st.cache_data
                 def sentinel_extractor(cloud_cover = 20, proj_crs = str(crs)):
@@ -254,5 +254,6 @@ if roi is not None:
 
 else:
     st.info('👆 Please upload a file to get started.')
+
 
 
