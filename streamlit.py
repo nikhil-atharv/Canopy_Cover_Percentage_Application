@@ -17,6 +17,26 @@ from datetime import datetime, date
 from rasterstats import zonal_stats
 from matplotlib.ticker import MaxNLocator
 
+import streamlit as st
+
+logo_url = "logo.png"
+
+st.markdown(
+    f"""
+    <style>
+        .logo {{
+            position: absolute;
+            top: 10px;
+            right: 10px;
+            width: 120px;
+        }}
+    </style>
+    <img src="{logo_url}" class="logo">
+    """,
+    unsafe_allow_html=True
+)
+
+
 st.title('☘ Canopy Cover Percentage Detection ☘')
 
 st.set_page_config(
@@ -243,6 +263,7 @@ if roi is not None:
 
 else:
     st.info('👆 Please upload a file to get started.')
+
 
 
 
