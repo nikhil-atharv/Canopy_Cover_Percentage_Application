@@ -17,7 +17,7 @@ from datetime import datetime, date
 from rasterstats import zonal_stats
 from matplotlib.ticker import MaxNLocator
 
-st.title('☘🌳🌴 Canopy Cover Percentage Detection ☘🌳🌴')
+st.title('☘ Canopy Cover Percentage Detection ☘')
 
 st.set_page_config(
     page_title = 'NDVI Canopy Cover Detection for Land Parcels',
@@ -243,6 +243,7 @@ if roi is not None:
 
 else:
     st.info('👆 Please upload a file to get started.')
+
 
 
 
