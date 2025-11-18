@@ -90,7 +90,7 @@ if roi is not None:
                 
             elif startDate != endDate:
                 
-                    def sentinel_extractor(cloud_cover = 20, proj_crs = str(crs)):
+                def sentinel_extractor(cloud_cover = 20, proj_crs = str(crs)):
 
                     st.badge('Searching Sentinel 2 Images for Selected Dates and Region')
 
@@ -247,5 +247,6 @@ if roi is not None:
 
 else:
     st.info('👆 Please upload a file to get started.')
+
 
 
